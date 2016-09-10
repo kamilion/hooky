@@ -4,19 +4,19 @@ Hooky: a python tool to perform a bunch of actions dictated by a json configurat
 Design notes:  
 
 Primary use case:  
-as a Customizer hook script. One file, self contained.  
-"An outside tool will drop it into the filesystem and execute it without any parameters"  
+* as a Customizer hook script. One file, self contained.  
+* "An outside tool will drop it into the filesystem and execute it without any parameters"  
 
 Primary use distro:  
-Ubuntu. Maybe it'll work on debian too.  
-Python3 will be required; restricting this to 15.04 and above.  
+* Ubuntu. Maybe it'll work on debian too.  
+* Python3 will be required; restricting this to 15.04 and above.  
 
 Primary package manager:  
-apt with ubuntu flavor PPA support.  
+* apt with ubuntu flavor PPA support.  
 
 Things we need to be able to do:  
-Bootstrap from a packageless shell prompt as root inside of a chroot that has been set up for us.  
-Provide the same things kamikazi-core's bash scripts do.  
+* Bootstrap from a packageless shell prompt as root inside of a chroot that has been set up for us.  
+* Provide the same things kamikazi-core's bash scripts do.  
 
 Things we have to do to reach the end:  
 * Define packagesets as a named packagegroup, eg 'kamikazi-webserver' might contain ['nginx-extra', 'rethinkdb']
